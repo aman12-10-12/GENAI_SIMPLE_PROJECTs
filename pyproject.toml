@@ -1,0 +1,21 @@
+[project]
+name = "main"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "aman12-10-12", email = "aman4483raj@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "groq>=1.7.0",
+    "pymupdf>=2.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+main = "main:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
